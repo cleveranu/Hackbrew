@@ -5,9 +5,9 @@ import styles from "./styles.module.css";
 
 const Signup = () => {
   const [data, setData] = useState({
-    firstName: "",
-    lastName: "",
+    fullName: "",
     email: "",
+    location: "",
     password: "",
   });
   const [error, setError] = useState("");
@@ -51,19 +51,10 @@ const Signup = () => {
             <h1>Create Account</h1>
             <input
               type="text"
-              placeholder="First Name"
-              name="firstName"
+              placeholder="Full Name"
+              name="fullName"
               onChange={handleChange}
-              value={data.firstName}
-              required
-              className={styles.input}
-            />
-            <input
-              type="text"
-              placeholder="Last Name"
-              name="lastName"
-              onChange={handleChange}
-              value={data.lastName}
+              value={data.fullName}
               required
               className={styles.input}
             />
@@ -73,6 +64,15 @@ const Signup = () => {
               name="email"
               onChange={handleChange}
               value={data.email}
+              required
+              className={styles.input}
+            />
+            <input
+              type="text"
+              placeholder="Location"
+              name="location"
+              onChange={handleChange}
+              value={data.location}
               required
               className={styles.input}
             />
@@ -87,7 +87,7 @@ const Signup = () => {
             />
             {error && <div className={styles.error_msg}>{error}</div>}
             <button type="submit" className={styles.green_btn}>
-              Sing Up
+              Register
             </button>
           </form>
         </div>
