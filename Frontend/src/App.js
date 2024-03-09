@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import RegisterPage from "./components/Signup/RegisterPage";
+import RegisterNGO from "./components/SignupNGO/RegisterNGO";
 import LoginPage from "./components/Login/LoginPage";
 import Main from "./components/DonationPage/main";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/product" element={<Main />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/registerngo" element={<RegisterNGO />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </div>
