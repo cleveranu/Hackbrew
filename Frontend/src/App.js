@@ -8,6 +8,7 @@ import {
 import LandingPage from "./components/LandingPage";
 import RegisterPage from "./components/Signup/RegisterPage";
 import LoginPage from "./components/Login/LoginPage";
+import ProductDetailPage from "./components/DonationPage/ProductDetail";
 import Main from "./components/DonationPage/main";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -20,8 +21,10 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
+          
           <Route path="/" element={<LandingPage />} />
           <Route path="/product" element={<Main />} />
+          <Route path="/product-detail/:title" element={<ProductDetailPage />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>

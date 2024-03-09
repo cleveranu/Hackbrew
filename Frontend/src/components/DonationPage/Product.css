@@ -1,48 +1,73 @@
-.card-container {
+/* ProductDetailPage.css */
+
+.product-detail-page {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: 2rem;
-  margin-top: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-.card {
-  width: calc(33.33% - 40px); /* Set the width to one-third of the container minus margins */
-  margin: 20px;
-  border: 2px solid #ededed;
-  padding: 20px;
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  cursor: pointer;
-}
-
-.card-img {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-
-.card-title {
-  margin-bottom: 1rem;
-}
-
-.card-reviews {
-  margin-bottom: 1rem;
+.product-image {
+  flex: 1;
   display: flex;
-}
-
-.rating-star {
-  color: #d5ab55;
-}
-
-.total-reviews {
-  font-size: 0.9rem;
-  margin-left: 10px;
-}
-
-.card-price {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  padding: 2rem;
+  background: #f5f5f5;
 }
 
-.bag-icon {
-  color: #535353;
+.product-image img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.product-content {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+.product-rating {
+  margin-bottom: 1rem;
+}
+
+.product-price {
+  font-size: 1.25rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  margin-bottom: 1rem;
+}
+
+.product-meta p {
+  margin-bottom: 0.5rem;
+}
+
+.add-to-cart-btn {
+  padding: 10px 15px;
+  background-color: #22a6b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  align-self: start;
+  margin-top: auto; /* Pushes the button to the bottom */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0d8a8a;
 }
