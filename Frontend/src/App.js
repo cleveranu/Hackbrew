@@ -1,10 +1,15 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import LandingPage from "./components/LandingPage";
-import RegisterPage from "./components/Signup/RegisterPage";
-import LoginPage from "./components/Login/LoginPage";
-import DonationPage from "./components/DonationPg";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Outlet } from 'react-router-dom';
+import LandingPage from './components/LandingPage';
+import Main from './components/DonationPage/main'; // Corrected import
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import './App.css';
+
+import Navbar from './components/DonationPage/Navbar'; // Import Navbar
+
+
+
 
 function App() {
   return (
@@ -12,10 +17,17 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/donation" element={<DonationPage />} />
+          <Route
+            path="/product"
+            element={
+              <Main/>}
+            
+          >
+          
+            {/* Add more nested routes for /product if needed */}
+          </Route>
         </Routes>
+   
       </div>
     </Router>
   );

@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  border-bottom: 2px solid #f3f3f3;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  z-index: 999;
+}
+
+.website-name {
+  font-size: 1.5rem;
+  margin-right: auto; /* Pushes EaseHub to the left */
+}
+
+.search-input {
+  padding: 12px 20px;
+  border: none;
+  background: #f7f6f6;
+  outline: none;
+  border-radius: 5px;
+  width: 14rem;
+  margin-left: 50rem;
+}
+
+.nav-icons {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+}

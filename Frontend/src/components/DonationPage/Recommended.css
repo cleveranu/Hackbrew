@@ -1,0 +1,39 @@
+.recommended-flex {
+  display: flex;
+  margin-left: 15rem;
+}
+
+.recommended-title {
+  margin-left: 15rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Additional styles for better spacing and alignment */
+div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Adjust margin and padding as needed */
+Button {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 6px 12px;
+  border: 2px solid #4caf50; /* Green border color */
+  border-radius: 5px;
+  background-color: #4caf50; /* Green background color */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+Button:hover {
+  background-color: #45a049; /* Darker green on hover */
+  color: #fff; /* White text color on hover */
+}
+
