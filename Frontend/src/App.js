@@ -13,7 +13,7 @@ import Main from "./components/DonationPage/main";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-import Navbar from "./components/DonationPage/Navbar"; // Import Navbar
+import Navbar from "./components/DonationPage/Navbar";
 
 function App() {
   return (
