@@ -6,7 +6,6 @@ import Recommended from "./Recommended";
 
 import Card from "./Card";
 
-
 function Main() {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
@@ -18,8 +17,7 @@ function Main() {
   };
 
   const filteredItems = products.filter(
-    (product) =>
-      product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
+    (product) => product.title.toLowerCase().indexOf(query.toLowerCase()) !== -1
   );
 
   // ----------- Radio Filtering -----------
@@ -43,10 +41,10 @@ function Main() {
     // Applying selected filter
     if (selected) {
       filteredProducts = filteredProducts.filter(
-        ({ category, color, company, newPrice, title }) =>
+        ({ category, color, description, newPrice, title }) =>
           category === selected ||
           color === selected ||
-          company === selected ||
+          description === selected ||
           newPrice === selected ||
           title === selected
       );
@@ -71,7 +69,6 @@ function Main() {
 
   return (
     <>
-      
       <Navigation query={query} handleInputChange={handleInputChange} />
       <Recommended handleClick={handleClick} />
       <Products result={result} />

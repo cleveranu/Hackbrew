@@ -1,0 +1,60 @@
+/* card.css */
+
+.card {
+  min-height: 400px;
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  background-color: #fff; /* Set a background color */
+}
+
+.card-img {
+  width: 100px;
+  height: 150px;
+  margin-right: 10px;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-reviews {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-description {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #1e1e1e; /* Set a default text color */
+}
+
+.card-price {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.bag-icon {
+  font-size: 24px;
+  color: #3e9600;
+}
+
+.total-reviews {
+  margin-left: 5px;
+}
+
+.rating-star {
+  color: #f39c12;
+}
