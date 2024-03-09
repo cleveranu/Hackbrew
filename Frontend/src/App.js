@@ -7,11 +7,11 @@ import {
 } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import RegisterPage from "./components/Signup/RegisterPage";
+import RegisterNGO from "./components/SignupNGO/RegisterNGO";
 import LoginPage from "./components/Login/LoginPage";
 import ProductDetailPage from "./components/DonationPage/ProductDetail";
 import Main from "./components/DonationPage/main";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import Navbar from "./components/DonationPage/Navbar";
@@ -26,6 +26,7 @@ function App() {
           <Route path="/product" element={<Main />} />
           <Route path="/product-detail/:title" element={<ProductDetailPage />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/registerngo" element={<RegisterNGO />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </div>
