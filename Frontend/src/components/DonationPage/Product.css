@@ -1,0 +1,48 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  width: calc(33.33% - 40px); /* Set the width to one-third of the container minus margins */
+  margin: 20px;
+  border: 2px solid #ededed;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  cursor: pointer;
+}
+
+.card-img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-reviews {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.rating-star {
+  color: #d5ab55;
+}
+
+.total-reviews {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bag-icon {
+  color: #535353;
+}
