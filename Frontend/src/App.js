@@ -10,7 +10,6 @@ import RegisterPage from "./components/Signup/RegisterPage";
 import LoginPage from "./components/Login/LoginPage";
 import Main from "./components/DonationPage/main";
 
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 import Navbar from "./components/DonationPage/Navbar";

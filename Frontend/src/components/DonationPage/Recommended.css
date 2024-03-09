@@ -1,3 +1,9 @@
+.recommended-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .recommended-flex {
   display: flex;
   margin-left: 15rem;
@@ -8,18 +14,11 @@
   margin-bottom: 20px;
   margin-top: 20px;
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
-
-/* Additional styles for better spacing and alignment */
-div {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /* Adjust margin and padding as needed */
-Button {
+.Button {
   margin-right: 10px;
   margin-bottom: 10px;
   padding: 6px 12px;
@@ -32,8 +31,7 @@ Button {
   transition: background-color 0.3s, color 0.3s;
 }
 
-Button:hover {
+.Button:hover {
   background-color: #45a049; /* Darker green on hover */
   color: #fff; /* White text color on hover */
 }
-
