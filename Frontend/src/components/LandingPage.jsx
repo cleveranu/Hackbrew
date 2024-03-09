@@ -1,5 +1,5 @@
-// src/components/LandingPage.js
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   return (
@@ -11,6 +11,14 @@ const LandingPage = () => {
         <p>This is a simple React landing page.</p>
         <p>Feel free to customize it according to your needs.</p>
       </section>
+      <div className="buttons-container">
+        <Link to="/login">
+          <button className="login-button">Login</button>
+        </Link>
+        <Link to="/register">
+          <button className="register-button">Register</button>
+        </Link>
+      </div>
       <footer>
         <p>&copy; 2024 Your Company</p>
       </footer>

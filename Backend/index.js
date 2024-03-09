@@ -1,14 +1,21 @@
-// index.js
-const express = require('express');
+require("dotenv").config();
+const express = require("express");
 const app = express();
-const port = 3000;
+const cors = require("cors");
+const connection = require("./db");
+const userRoutes = require("./routes/users");
+const authRoutes = require("./routes/auth");
 
-// Define a simple route
-app.get('/', (req, res) => {
-  res.send('Hello, this is your backend!');
-});
+// database connection
+connection();
 
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
-});
+// middlewares
+app.use(express.json());
+app.use(cors());
+
+// routes
+app.use("/api/users", userRoutes);
+app.use("/api/auth", authRoutes);
+
+const port = process.env.PORT || 8080;
+app.listen(port, console.log(`Listening on port ${port}...`));
