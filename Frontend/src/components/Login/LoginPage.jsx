@@ -31,7 +31,7 @@ const Login = () => {
 
   return (
     <div className={styles.login_container}>
-      <div className={styles.login_form_container}>
+      <div className={styles.login_form_cont}>
         <div className={styles.left}>
           <form className={styles.form_container} onSubmit={handleSubmit}>
             <h1>Login to Your Account</h1>
@@ -62,7 +62,7 @@ const Login = () => {
         <div className={styles.right}>
           <h1>New Here ?</h1>
           <Link to="/register">
-            <button type="button" className={styles.white_btn}>
+            <button type="button" className={styles.white_btns}>
               Register
             </button>
           </Link>
