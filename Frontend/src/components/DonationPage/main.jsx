@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navigation from './Navbar';
 import Products from './Product';
-import products from '../data';
+import products from '../../../../Backend/data';
 import Recommended from './Recommended';
 import { Link } from 'react-router-dom';
 import './Card.css'; // Assuming CSS for Card is stored here
