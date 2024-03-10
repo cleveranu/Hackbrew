@@ -16,9 +16,9 @@ const Nav = ({ handleInputChange, query }) => {
         />
       </div>
       <div className="profile-container">
-        <a href="">
+        {/* <a href="">
           <AiOutlineShoppingCart className="nav-icons" />
-        </a>
+        </a> */}
       </div>
     </nav>
   );

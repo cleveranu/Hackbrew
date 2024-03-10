@@ -30,13 +30,17 @@ function ProductDetailPage() {
           {/* Render stars based on rating */}
         </div>
         <p className="product-price">{`Need Stars out of 5: ${product.Need_Rating}`}</p>
-        <p className="product-description">{product.Description}</p>
+        {product && product.Description && (
+  <p className="product-description">{product.Description}</p>
+)}
+
+       
         <div className="product-meta">
           <p><strong>Established:</strong> {product.Established_in}</p>
           <p><strong>State:</strong> {product.State}</p>
           <p><strong>City:</strong> {product.City}</p>
         </div>
-        <button className="add-to-cart-btn">Add To Cart</button>
+        {/* <button className="add-to-cart-btn">Add To Cart</button> */}
       </div>
     </div>
   );
