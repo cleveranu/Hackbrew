@@ -5,7 +5,7 @@ import {
   Routes,
   Outlet,
 } from "react-router-dom";
-import LandingPage from "./components/LandingPage";
+import LandingPageApp from "./components/LandingPage/LandingPageApp";
 import RegisterPage from "./components/Signup/RegisterPage";
 import RegisterNGO from "./components/SignupNGO/RegisterNGO";
 import LoginPage from "./components/Login/LoginPage";
@@ -22,7 +22,7 @@ function App() {
       <div className="App">
         <Routes>
           
-          <Route path="/" element={<LandingPage />} />
+          <Route path="/" element={<LandingPageApp />} />
           <Route path="/product" element={<Main />} />
           <Route path="/product-detail/:title" element={<ProductDetailPage />} />
           <Route path="/donation-input" element={<DonationInput/>} />

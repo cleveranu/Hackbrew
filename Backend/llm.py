@@ -13,7 +13,7 @@ import os
 
 
 
-openai.api_key  = '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'
+openai.api_key  = 'sk-nURS6****'
 
 def get_completion(prompt, model="gpt-3.5-turbo", temperature=0):
     messages = [{"role": "user", "content": prompt}]

@@ -86,9 +86,13 @@ const Signup = () => {
               className={styles.input}
             />
             {error && <div className={styles.error_msg}>{error}</div>}
+            <Link to='/donation-input'>
+
             <button type="submit" className={styles.green_btn}>
-              Register
+            Register
             </button>
+            </Link>
+             
           </form>
         </div>
       </div>

@@ -76,6 +76,25 @@ const SignupNGO = () => {
               required
               className={styles.input}
             />
+              <input
+              type="text"
+              placeholder="Description"
+              name="Description"
+              onChange={handleChange}
+              value={data.title}
+              required
+              className={styles.input}
+            />
+             
+              <input
+              type="text"
+              placeholder="On a scale of 1 to 5 what is your need rating"
+              name="Need_Rating"
+              onChange={handleChange}
+              value={data.img}
+              required
+              className={styles.input}
+            />
             <input
               type="password"
               placeholder="Password"
@@ -87,7 +106,8 @@ const SignupNGO = () => {
             />
             {error && <div className={styles.error_msg}>{error}</div>}
             <button type="submit" className={styles.green_btn}>
-              Register
+              Register 
+              {/* on clicking this chatbot opens and the data goes in backend */}
             </button>
           </form>
         </div>
