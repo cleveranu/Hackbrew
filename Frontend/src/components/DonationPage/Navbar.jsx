@@ -5,7 +5,7 @@ import "./Navbar.css";
 const Nav = ({ handleInputChange, query }) => {
   return (
     <nav>
-      <div>EaseHub</div>
+      <div>NGO Connect</div>
       <div className="nav-container">
         <input
           className="search-input"

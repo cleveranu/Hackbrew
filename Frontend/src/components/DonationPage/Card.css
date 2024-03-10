@@ -59,7 +59,7 @@
 }
 
 .card-prevPrice {
-  text-decoration: line-through;
+  /* text-decoration: line-through; */
   color: #999;
 }
 

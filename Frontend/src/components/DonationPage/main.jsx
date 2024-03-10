@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState } from 'react';
 import Navigation from './Navbar';
 import Products from './Product';
@@ -6,15 +5,6 @@ import products from '../data';
 import Recommended from './Recommended';
 import { Link } from 'react-router-dom';
 import './Card.css'; // Assuming CSS for Card is stored here
-=======
-import React, { useState } from "react";
-import Navigation from "./Navbar";
-import Products from "./Product";
-import products from "../data";
-import Recommended from "./Recommended";
-import { Link } from "react-router-dom";
-import "./Card.css"; // Assuming CSS for Card is stored here
->>>>>>> f95c5527030ba81a27a72b4d8b0270acab6707e2
 
 function Main() {
   const [selectedCategory, setSelectedCategory] = useState(null);
@@ -89,7 +79,7 @@ function Main() {
   return (
     <>
       <Navigation query={query} handleInputChange={handleInputChange} />
-      <Recommended handleClick={handleClick} />
+      {/* <Recommended handleClick={handleClick} /> css fix needed */}
       <Products result={result} />
     </>
   );

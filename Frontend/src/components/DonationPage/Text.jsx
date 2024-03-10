@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './DonationPage.css'; // Make sure to create a DonationInput.css file for the styling
-
+import {Link } from 'react-router-dom';
 const DonationInput = () => {
   const [inputValue, setInputValue] = useState('');
 
@@ -46,9 +46,12 @@ const handleSubmit = (e) => {
           placeholder="I want to donate food... I want to volunteer in NGOs"
           className="donation-input"
         />
+        <Link to='/products'>
         <button type="submit" className="donation-submit">
           Submit
         </button>
+        </Link>
+       
       </form>
     </div>
   );

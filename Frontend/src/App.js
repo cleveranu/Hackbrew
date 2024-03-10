@@ -22,12 +22,8 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
-<<<<<<< HEAD
           
           <Route path="/" element={<LandingPageApp />} />
-=======
-          <Route path="/" element={<LandingPage />} />
->>>>>>> f95c5527030ba81a27a72b4d8b0270acab6707e2
           <Route path="/product" element={<Main />} />
           <Route
             path="/product-detail/:title"
