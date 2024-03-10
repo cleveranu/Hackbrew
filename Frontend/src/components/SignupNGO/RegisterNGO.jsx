@@ -5,9 +5,12 @@ import styles from "./styles.module.css";
 
 const SignupNGO = () => {
   const [data, setData] = useState({
-    fullName: "",
+    name: "",
     email: "",
-    location: "",
+    description: "",
+    establishedIn: "",
+    state: "",
+    city: "",
     password: "",
   });
   const [error, setError] = useState("");
@@ -22,7 +25,7 @@ const SignupNGO = () => {
     try {
       const url = "http://localhost:8080/api/users";
       const { data: res } = await axios.post(url, data);
-      navigate("/login");
+      navigate("/loginngo");
       console.log(res.message);
     } catch (error) {
       if (
@@ -40,7 +43,7 @@ const SignupNGO = () => {
       <div className={styles.signup_form_cont}>
         <div className={styles.left}>
           <h1>Welcome Back</h1>
-          <Link to="/login">
+          <Link to="/loginngo">
             <button type="button" className={styles.white_btns}>
               Sign in
             </button>
@@ -48,13 +51,13 @@ const SignupNGO = () => {
         </div>
         <div className={styles.right}>
           <form className={styles.form_container} onSubmit={handleSubmit}>
-            <h1>Create Account</h1>
+            <h1>Create NGO Account</h1>
             <input
               type="text"
               placeholder="Full Name"
-              name="fullName"
+              name="Name"
               onChange={handleChange}
-              value={data.fullName}
+              value={data.name}
               required
               className={styles.input}
             />
@@ -67,12 +70,39 @@ const SignupNGO = () => {
               required
               className={styles.input}
             />
+            <textarea
+              type="text"
+              placeholder="Description"
+              name="description"
+              onChange={handleChange}
+              value={data.description}
+              required
+              className={styles.input}
+            />
             <input
               type="text"
-              placeholder="Location"
-              name="location"
+              placeholder="Established in"
+              name="establishedIn"
               onChange={handleChange}
-              value={data.location}
+              value={data.establishedIn}
+              required
+              className={styles.input}
+            />
+            <input
+              type="text"
+              placeholder="State"
+              name="state"
+              onChange={handleChange}
+              value={data.state}
+              required
+              className={styles.input}
+            />
+            <input
+              type="text"
+              placeholder="City"
+              name="city"
+              onChange={handleChange}
+              value={data.city}
               required
               className={styles.input}
             />
