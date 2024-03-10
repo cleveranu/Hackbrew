@@ -8,6 +8,7 @@ import {
 import LandingPageApp from "./components/LandingPage/LandingPageApp";
 import RegisterPage from "./components/Signup/RegisterPage";
 import RegisterNGO from "./components/SignupNGO/RegisterNGO";
+import LoginNGO from "./components/LoginNGO/LoginNGO";
 import LoginPage from "./components/Login/LoginPage";
 import ProductDetailPage from "./components/DonationPage/ProductDetail";
 import Main from "./components/DonationPage/main";
@@ -21,13 +22,21 @@ function App() {
     <Router>
       <div className="App">
         <Routes>
+<<<<<<< HEAD
           
           <Route path="/" element={<LandingPageApp />} />
+=======
+          <Route path="/" element={<LandingPage />} />
+>>>>>>> f95c5527030ba81a27a72b4d8b0270acab6707e2
           <Route path="/product" element={<Main />} />
-          <Route path="/product-detail/:title" element={<ProductDetailPage />} />
-          <Route path="/donation-input" element={<DonationInput/>} />
+          <Route
+            path="/product-detail/:title"
+            element={<ProductDetailPage />}
+          />
+          <Route path="/donation-input" element={<DonationInput />} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/registerngo" element={<RegisterNGO />} />
+          <Route path="/loginngo" element={<LoginNGO />} />
           <Route path="/login" element={<LoginPage />} />
         </Routes>
       </div>
