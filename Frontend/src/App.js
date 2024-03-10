@@ -12,10 +12,9 @@ import LoginPage from "./components/Login/LoginPage";
 import ProductDetailPage from "./components/DonationPage/ProductDetail";
 import Main from "./components/DonationPage/main";
 
-<<<<<<< Updated upstream
-=======
 
->>>>>>> Stashed changes
+import DonationInput from "./components/DonationPage/Text";
+
 import "./App.css";
 
 import Navbar from "./components/DonationPage/Navbar";
@@ -29,6 +28,7 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/product" element={<Main />} />
           <Route path="/product-detail/:title" element={<ProductDetailPage />} />
+          <Route path="/donation-input" element={<DonationInput/>} />
           <Route path="/register" element={<RegisterPage />} />
           <Route path="/registerngo" element={<RegisterNGO />} />
           <Route path="/login" element={<LoginPage />} />
