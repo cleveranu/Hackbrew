@@ -46,7 +46,7 @@ const handleSubmit = (e) => {
           placeholder="I want to donate food... I want to volunteer in NGOs"
           className="donation-input"
         />
-        <Link to='/products'>
+        <Link to='/product'>
         <button type="submit" className="donation-submit">
           Submit
         </button>
