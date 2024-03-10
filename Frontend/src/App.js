@@ -12,6 +12,10 @@ import LoginPage from "./components/Login/LoginPage";
 import ProductDetailPage from "./components/DonationPage/ProductDetail";
 import Main from "./components/DonationPage/main";
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 import "./App.css";
 
 import Navbar from "./components/DonationPage/Navbar";
